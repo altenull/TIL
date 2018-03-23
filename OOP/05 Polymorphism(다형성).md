@@ -2,7 +2,7 @@
 
 ### 오버로딩(Overloading)
 
-같은 이름의 함수를 여러개 정의하는 것. 파라미터의 개수를 다르게 하거나, 파라미터의 데이터 타입을 다르게 구현해야함.
+같은 이름의 함수를 여러개 정의하는 것. 파라미터의 개수를 다르게 하거나, 파라미터의 데이터 타입을 달리하여 구현해야함.
 
 ### 오버라이딩(Overriding)
 
@@ -16,6 +16,7 @@ public class Tesla extends Car {
     System.out.println("this is a electric car");
   }
 
+  // 오버로딩
   // printDescription() 함수는 이미 Tesla 클래스내에 구현되어 있음. 파라미터를 달리하여 추가로 구현함.
   void printDescription(String param) {
     System.out.println("this is a electric car, year : " + super.getYear() + ", model : " + super.getModel() + ".");
