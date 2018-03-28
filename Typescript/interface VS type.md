@@ -5,16 +5,16 @@
 interface
 ```javascript
 interface Person {
-  name: string;
-  age: number;
+  name: string,
+  age: number
 }
 ```
 
 type
 ```javascript
 type Person = {
-  name: string;
-  age: number;
+  name: string,
+  age: number
 }
 ```
 
