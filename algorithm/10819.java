@@ -42,7 +42,7 @@ public class Main {
     int sum = 0;
     for ( int i = 1;  i < a.length;  i++ ) {
       int result = a[i] - a[i - 1];
-      sum += Math.abs(a[i] = a[i - 1]);
+      sum += Math.abs(result);
     }
     return sum;
   }
@@ -62,8 +62,8 @@ public class Main {
     int ans = 0;
 
     do {
-        int temp = calculate(a);
-        ans = Math.max(ans, temp);
+      int temp = calculate(a);
+      ans = Math.max(ans, temp);
     } while(nextPermutation(a));
 
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
