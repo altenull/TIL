@@ -50,14 +50,18 @@ console.log(pairs); // [{origin: 1, result: 2},
                     //  {origin: 3, result: 6}]
 ```
 
-### 매개변수 초기화
+### Default parameter
 
-매개변수에 기본 값을 주어 인자를 전달하지 않는 경우를 대비
+매개변수에 기본 값을 주어 인자를 전달하지 않는 경우를 대비할 수 있음
 
 ``` javascript
-const printFood = (food = 'Rice') => {
-  console.log(food);
+const printDishes = (mainDish = 'Rice', drink = 'Coke') => {
+  console.log(`${mainDish} and ${drink}`);
 }
 
-printFood(); // 'Rice'
+printDishes('Pasta', 'Beer');    // 'Pasta and Beer'
+printDishes(undefined, 'Juice'); // 'Rice and Juice'
+printDishes(null, 'Juice');      // 'null and Juice'
+printDishes('Pizza')             // 'Pizza and Coke'
+printDishes();                   // 'Rice and Coke'
 ```
