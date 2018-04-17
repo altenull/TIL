@@ -1,7 +1,9 @@
 # Parameters
 
 **Default Parameters**
+
 파라미터에 디폴트값을 할당 할 수 있음.
+
 ``` javascript
 function addTwoNumbers(x = 0, y = 0) {
   return x + y;
@@ -9,7 +11,9 @@ function addTwoNumbers(x = 0, y = 0) {
 ```
 
 **Rest Parameters**
+
 spread 연산자(...) 사용
+
 ``` javascript
 function logArguments(...args) {
   for (let arg of args) {
@@ -19,6 +23,7 @@ function logArguments(...args) {
 ```
 
 **Spread Operator**
+
 ```javascript
 Math.max(...[-1, 100, 9001, -32]); // 9001
 ```
